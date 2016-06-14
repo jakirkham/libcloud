@@ -39,6 +39,9 @@ SSL_VERSION = ssl.PROTOCOL_TLSv1
 # File containing one or more PEM-encoded CA certificates
 # concatenated together.
 CA_CERTS_PATH = [
+    # conda cert path
+    '%PREFIX%/ssl/cacert.pem',
+
     # centos/fedora: openssl
     '/etc/pki/tls/certs/ca-bundle.crt',
 
